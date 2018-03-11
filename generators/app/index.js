@@ -6,10 +6,10 @@ const yosay = require('yosay');
 module.exports = class extends Generator {
   initializing() {
     this.argument('containerName', {
-      desc: 'The name of the redux feature. This will be the folder name.',
+      desc: 'The name of the react container. This will be the folder name.',
       type: String,
       required: true,
-      default: 'feature'
+      default: 'container'
     });
   }
 
@@ -19,13 +19,13 @@ module.exports = class extends Generator {
       yosay(`Welcome to the superb ${chalk.red('generator-react-container')} generator!`)
     );
 
-    const { featureName } = this.options;
-
+    const { containerName } = this.options;
     const prompts = [
       {
         type: 'confirm',
         name: 'shouldCreate',
-        message: 'Create ' + featureName + ' folder in ' + this.destinationRoot() + ' ?',
+        message:
+          'Create ' + containerName + ' folder in ' + this.destinationRoot() + ' ?',
         default: true
       }
     ];
@@ -43,10 +43,9 @@ module.exports = class extends Generator {
   writing() {
     const { containerName } = this.options;
 
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('TemplateContainer'),
-      this.destinationPath(`${containerName}Container`),
-      { containerName }
+      this.destinationPath(containerName)
     );
   }
 

@@ -7,10 +7,16 @@ describe('generator-react-container:app', () => {
   beforeAll(() => {
     return helpers
       .run(path.join(__dirname, '../generators/app'))
-      .withPrompts({ someAnswer: true });
+      .withArguments('TestContainer')
+      .withPrompts({ shouldCreate: true });
   });
 
   it('creates files', () => {
-    assert.file(['dummyfile.txt']);
+    assert.file([
+      'TestContainer/Component.css',
+      'TestContainer/Component.js',
+      'TestContainer/Container.js',
+      'TestContainer/index.js'
+    ]);
   });
 });
