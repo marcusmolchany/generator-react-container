@@ -37,7 +37,7 @@ MIT
 
 [npm-image]: https://badge.fury.io/js/generator-react-container.svg
 [npm-url]: https://npmjs.org/package/generator-react-container
-[travis-image]: https://travis-ci.org/Fullscreen/generator-react-container.svg?branch=master
-[travis-url]: https://travis-ci.org/Fullscreen/generator-react-container
-[daviddm-image]: https://david-dm.org/Fullscreen/generator-react-container.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Fullscreen/generator-react-container
+[travis-image]: https://travis-ci.org/marcusmolchany/generator-react-container.svg?branch=master
+[travis-url]: https://travis-ci.org/marcusmolchany/generator-react-container
+[daviddm-image]: https://david-dm.org/marcusmolchany/generator-react-container.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/marcusmolchany/generator-react-container
