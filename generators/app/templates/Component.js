@@ -2,22 +2,22 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 // todo: import other components and utils here
-import './<%= componentName %>.css';
+import './Component.css';
 
-class <%= componentName %>Component extends React.PureComponent {
+class Component extends React.PureComponent {
   state = {
     // todo: add your state here
   }
 
   render() {
     return (
-      <h1><%= componentName %></h1>
+      <h1><%= containerName %></h1>
     );
   }
 }
 
-<%= componentName %>Component.propTypes = {
+Component.propTypes = {
   // todo: add propTypes
 };
 
-export default <%= componentName %>Component;
+export default Component;

@@ -2,13 +2,13 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 // todo: import actions, constants, and selectors here
-import <%= componentName %>Component from './<%= componentName %>Component';
+import Component from './Component';
 
-const <%= componentName %>Fn = ({ }) => (
-  <<%= componentName %> />
+const ComponentFn = ({ }) => (
+  <Component />
 );
 
-<%= componentName %>Fn.propTypes = {
+ComponentFn.propTypes = {
   // todo: add propTypes
 };
 
@@ -20,4 +20,4 @@ const mapDispatchToProps = dispatch => ({
   // todo: use bindActionCreators here
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(<%= componentName %>Fn);
+export default connect(mapStateToProps, mapDispatchToProps)(ComponentFn);
