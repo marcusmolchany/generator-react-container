@@ -50,7 +50,7 @@ module.exports = class extends Generator {
     );
   }
 
-  install() {
-    this.installDependencies();
-  }
+  // Install() {
+  //   this.installDependencies();
+  // }
 };
