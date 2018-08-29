@@ -6,11 +6,11 @@ import { bindActionCreators } from 'redux';
 // todo: import actions, constants, and selectors here
 import Component from './Component';
 
-const ComponentFn = ({ }) => (
+const ContainerFn = ({ }) => (
   <Component />
 );
 
-ComponentFn.propTypes = {
+ContainerFn.propTypes = {
   // todo: add propTypes
 };
 
@@ -22,4 +22,4 @@ const mapDispatchToProps = dispatch => ({
   // todo: use bindActionCreators here
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ComponentFn);
+export default connect(mapStateToProps, mapDispatchToProps)(ContainerFn);
